@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <main class="container">
+        <section id="recipes">
+            <h2> Список рецептов</h2>
+
+            <form id="recipe-form" class="add-form">
+                <input
+                    type="text"
+                    id="recipe-name"
+                    placeholder="Введите название рецепта"
+                    aria-label="Название рецепта"
+                >
+                <button type="submit">Добавить рецепт</button>
+            </form>
+
+            <p id="recipe-message" class="message" role="status"></p>
+            <div id="recipes-list" class="cards">
+                <p>Загрузка рецептов...</p>
+            </div>
+        </section>
+
+    
+        <section id="products">
+            <h2> Список товаров</h2>
+
+            <form id="product-form" class="add-form">
+                <input
+                    type="text"
+                    id="product-name"
+                    placeholder="Введите название товара"
+                    aria-label="Название товара"
+                >
+                <button type="submit">Добавить товар</button>
+            </form>
+
+            <p id="product-message" class="message" role="status"></p>
+            <div id="products-list" class="cards">
+                <p>Загрузка товаров...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
